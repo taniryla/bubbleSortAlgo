@@ -49,3 +49,15 @@ IV. 	Step Four (Check). Examine the solution obtained and refactor.
 20.  Can you improve the performance? 
 21.   How have other people solved this problem?
 
+function bubbleSort(arr){
+  for (let i = arr.length; i > 0; i--){
+    for (let j = 0; j < i -1; i++){
+      if (arr[j] > arr[j + 1]){
+        let temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+    }
+  }
+  return arr;
+}
